@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>InsertScript Sample</TITLE>
+
+<META NAME="AUTHOR" CONTENT="InetSDK">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META NAME="ROBOTS" CONTENT="noindex">
+<LINK REL="stylesheet" HREF="samplesSDKIE4.css" TYPE="text/css">
+
+
+</HEAD>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+
+<BODY onload="">
+<DIV CLASS="body">
+
+<H1>Insert Script Sample</H1>
+<P>This example uses the <b>innerHTML</b> property to insert script into the page.</P>
+
+<div id="cookies"></div>
+
+
+<!-- START_PAGE_FOOTER -->
+<BR><BR><BR>
+<p class="viewsource">[Right-click and choose View Source from the shortcut menu.] </p>
+<A CLASS="copyright" HREF="http://www.microsoft.com/isapi/gomscom.asp?TARGET=/info/cpyright.htm">&copy; 2007 Microsoft Corporation. All rights reserved. Terms of use.</A>
+<!-- END_PAGE_FOOTER -->
+</DIV>
+
+<SCRIPT type="text/javascript">
+function insertScript(){
+	
+	var sHTML="&nbsp;";
+	var sScript="<style type='text/css'>";
+	sScript = sScript + "#ASD{}";
+	sScript = sScript + "</style" + ">";
+	cookies.innerHTML = sHTML + sScript;
+
+}
+insertScript();
+</SCRIPT>
+
+</BODY>
+</HTML>
+<!-- zmiana -->
