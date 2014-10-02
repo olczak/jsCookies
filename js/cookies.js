@@ -36,7 +36,7 @@ function closeOverlay(){
 <div id="cookies-info" class="cookies-info"><div class="cookies-info-inner pie"><p>Plus dba o swoich Klientów. Dla zapewnienia łatwości i wygody odbioru przekazywanych informacji oraz w celu usprawnienia funkcjonowania witryn plus.pl, korzystamy z technologii plików cookies. Jeśli nie chcesz, by pliki cookies były instalowane na Twoim dysku zmień ustawienia swojej przeglądarki. Dalsze korzystanie z witryny oznacza zgodę na wykorzystanie plików cookies, zgodnie z aktualnymi ustawieniami przeglądarki. Więcej informacji w <a href="http://www.plus.pl/polityka-cookies/">Polityce Cookies</a>.</p><span class="btn-green-std cookies-info-close cookies-info-accept pie">OK</span><span class="cookies-info-close btn-close" title="Zamknij komunikat"></span></div></div>
 
 */
-function cookiecDiv(wwwName, version){
+function cookiecDiv(wwwName){
 	
 	if(!readCookie('cookiesInfo')){
 		
@@ -74,7 +74,7 @@ function cookiecDiv(wwwName, version){
 		
 		var htmlCookies = document.createElement("div");
 			htmlCookies.id = 'cookies';
-			htmlCookies.className = version;
+			htmlCookies.className = '';
 		document.body.appendChild(htmlCookies);
 		
 		var wrapper = document.getElementById('cookies');
@@ -83,7 +83,7 @@ function cookiecDiv(wwwName, version){
 		//alert('readCookie: '+readCookie('cookiesInfo'));
 	}
 }
-cookiecDiv('www.pepsi.pl', 'white');	//@ www, white || black
+cookiecDiv('www.pepsi.pl');	//@ www
 
 function insertScript(){
 	
